@@ -1,0 +1,60 @@
+.experience-section {
+    background-color: var(--card-bg);
+    position: relative;
+    z-index: 1;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2rem;
+    background-color: var(--bg-color);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2rem;
+    top: 2.5rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 3px solid var(--bg-color);
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px var(--card-bg);
+}
+
+.role-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.duration {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.role-description {
+    margin-bottom: 0;
+}

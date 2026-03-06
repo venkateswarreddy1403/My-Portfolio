@@ -1,0 +1,60 @@
+.premium-navbar {
+    background-color: var(--bg-color);
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--border-color);
+}
+  
+.portfolio-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    letter-spacing: -1px;
+}
+
+.premium-nav-links .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin: 0 1rem;
+    font-size: 1.05rem;
+    position: relative;
+}
+
+.premium-nav-links .nav-link:hover,
+.premium-nav-links .nav-link.active {
+    color: var(--text-primary);
+}
+
+.premium-nav-links .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.premium-nav-links .nav-link:hover::after,
+.premium-nav-links .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-contact-btn {
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem !important;
+    color: var(--text-primary) !important;
+    transition: all 0.3s ease;
+}
+
+.nav-contact-btn:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-color) !important;
+}
+
+.nav-contact-btn::after {
+    display: none;
+}
